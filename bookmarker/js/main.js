@@ -31,16 +31,6 @@ function saveBookmark(e) {
 
         // get bookmarks from local storage
         var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
-
-        // check if bookmark is already in bookmarks
-        for(var i = 0; i < bookmarks.length; i++) {
-            if(bookmarks[i].siteName == bookmark.siteName
-             && bookmarks[i].siteURL == bookmark.siteURL) {
-                // Clear form
-                document.getElementById('myForm').reset();
-                return false;
-            }
-        }
         
         // add bookmark to array
         bookmarks.push(bookmark);
