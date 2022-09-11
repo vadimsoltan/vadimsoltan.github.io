@@ -27,11 +27,6 @@
         align-items: flex-start;
       }
 
-      @include largeDesktop {
-        width: 1700px;
-        height: 1700px;
-      }
-
       img {
         height: 90%;
 

@@ -46,12 +46,6 @@
           width: 200px;
           height: 20px;
         }
-
-        @include largeDesktop {
-          width: 500px;
-          height: 30px;
-          font-size: 16px;
-        }
       }
 
       textarea {
@@ -64,38 +58,26 @@
           width: 200px;
           height: 100px;
         }
-
-        @include largeDesktop {
-          width: 500px;
-          height: 200px;
-          font-size: 16px;
-        }
       }
+    }
 
-      button {
-        width: 150px;
-        height: 30px;
-        color: $tertiaryColor;
-        background-color: $secondaryColor;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
+    button {
+      width: 150px;
+      height: 30px;
+      color: $tertiaryColor;
+      background-color: $secondaryColor;
+      border: none;
+      border-radius: 10px;
+      font-weight: 500;
+      cursor: pointer;
 
-        @include largeDesktop {
-          width: 250px;
-          height: 40px;
-          font-size: 18px;
-        }
-
-        &:focus {
-          outline: none;
-        }
+      &:focus {
+        outline: none;
       }
+    }
 
-      span {
-        color: green;
-      }
+    span {
+      color: green;
     }
   }
 }

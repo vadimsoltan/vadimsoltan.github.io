@@ -58,11 +58,6 @@
         height: 100px;
       }
 
-      @include largeDesktop {
-        width: 500px;
-        height: 300px;
-      }
-
       h3 {
         position: absolute;
         font-size: 20px;
