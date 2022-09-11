@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vadimsoltan.github.io/static/css/main.85b64d3e.css",
+    "main.js": "/vadimsoltan.github.io/static/js/main.65b86bbf.js",
+    "index.html": "/vadimsoltan.github.io/index.html",
+    "main.85b64d3e.css.map": "/vadimsoltan.github.io/static/css/main.85b64d3e.css.map",
+    "main.65b86bbf.js.map": "/vadimsoltan.github.io/static/js/main.65b86bbf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85b64d3e.css",
+    "static/js/main.65b86bbf.js"
+  ]
+}
