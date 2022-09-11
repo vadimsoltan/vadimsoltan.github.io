@@ -23,7 +23,7 @@ export default function Resume() {
       id: "2",
       icon: "engineering",
       title: "Experience",
-      desc: "Canadian Imperial Bank of Commerce",
+      desc: "CIBC",
       details: "Software Engineer",
       details2: "Internship",
       details3: "2019 - 2020",

@@ -9,14 +9,14 @@
 
   h1 {
     position: absolute;
-    font-size: 50px;
+    font-size: 4rem;
     color: $tertiaryColor;
     top: 5%;
     padding-top: 30px;
   }
 
   .arrow {
-    height: 50px;
+    height: 5%;
     position: absolute;
     cursor: pointer;
 
@@ -25,20 +25,20 @@
     }
 
     &.left {
-      font-size: 50px;
+      font-size: 4rem;
       color: $tertiaryColor;
-      left: 100px;
+      left: 5%;
     }
 
     &.right {
-      font-size: 50px;
+      font-size: 4rem;
       color: $tertiaryColor;
-      right: 100px;
+      right: 5%;
     }
   }
 
   .slider {
-    height: 350px;
+    height: 60%;
     display: flex;
     position: absolute;
     left: 0;
@@ -57,7 +57,7 @@
       justify-content: center;
 
       .item {
-        width: 700px;
+        aspect-ratio: 4/2;
         height: 100%;
         background-color: $tertiaryColor;
         border-radius: 20px;
@@ -99,7 +99,7 @@
               }
 
               .icon {
-                font-size: 25px;
+                font-size: 1.3rem;
                 color: $tertiaryColor;
 
                 @include mobile {
@@ -108,34 +108,34 @@
               }
             }
             h4 {
-              font-size: 14px;
+              font-size: 1.5rem;
               @include mobile {
                 display: none;
               }
             }
 
             h3 {
-              font-size: 16px;
+              font-size: 2rem;
 
               @include mobile {
                 font-size: 16px;
               }
             }
             h2 {
-              font-size: 18px;
+              font-size: 2.5rem;
 
               @include mobile {
                 font-size: 13px;
               }
             }
             p {
-              font-size: 12px;
+              font-size: 1.2rem;
               @include mobile {
                 display: none;
               }
             }
             span {
-              font-size: 12px;
+              font-size: 1.2rem;
               @include mobile {
                 display: none;
               }
@@ -151,7 +151,14 @@
           overflow: hidden;
 
           img {
-            width: 100wv;
+            max-width: 100%;
+            max-height: 1000%;
+            width: 100%;
+            align-items: center;
+
+            @include mobile {
+              min-width: 100px;
+            }
           }
         }
       }

@@ -1,11 +1,15 @@
 $mainColor: #202431;
 $secondaryColor: #49516f;
 $tertiaryColor: #f1f3f9;
-$accentColor1: #496f5d;
+$accentColor1: crimson;
 
 $width: 768px;
 $desktop1: 2560px;
 $desktop2: 1080px;
+
+html {
+  font-size: calc(14px + 0.056w);
+}
 
 @mixin mobile {
   @media (max-width: #{$width}) {

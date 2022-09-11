@@ -8,7 +8,8 @@
   justify-content: center;
 
   h1 {
-    font-size: 50px;
+    font-size: 4rem;
+    overflow: hidden;
 
     @include mobile {
       font-size: 20px;
@@ -20,6 +21,7 @@
     padding: 0;
     list-style: none;
     display: flex;
+    overflow: hidden;
 
     @include mobile {
       margin: 10px 0;
@@ -34,14 +36,15 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 
     @include mobile {
       width: 100%;
     }
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 30%;
+      height: 45%;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
       margin: 10px 20px;
@@ -51,6 +54,7 @@
       color: $tertiaryColor;
       position: relative;
       transition: all 0.5s ease;
+      overflow: hidden;
       cursor: pointer;
 
       @include mobile {
@@ -60,12 +64,11 @@
 
       h3 {
         position: absolute;
-        font-size: 20px;
+        font-size: 4rem;
       }
 
       img {
         width: 100%;
-        height: 100%;
         object-fit: cover;
         z-index: 1;
       }

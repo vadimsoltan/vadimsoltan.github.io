@@ -1,9 +1,10 @@
 @import "../../global.scss";
 
 .portfolioList {
-  font-size: 14px;
+  font-size: 1rem;
   margin-right: 50px;
   padding: 7px;
+  overflow: hidden;
   cursor: pointer;
 
   @include mobile {
