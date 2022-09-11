@@ -1,0 +1,26 @@
+$mainColor: #202431;
+$secondaryColor: #49516f;
+$tertiaryColor: #f1f3f9;
+$accentColor1: #496f5d;
+
+$width: 768px;
+$desktop1: 2560px;
+$desktop2: 1080px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin largeDesktop {
+  @media (max-width: #{$desktop1}) {
+    @content;
+  }
+}
+
+@mixin avgDesktop {
+  @media (max-width: #{$desktop2}) {
+    @content;
+  }
+}
