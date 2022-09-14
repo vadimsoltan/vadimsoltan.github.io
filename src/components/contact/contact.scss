@@ -13,8 +13,9 @@
     overflow: hidden;
 
     img {
-      width: 100vw;
-      object-fit: scale-down;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
     }
   }
   .right {
@@ -29,6 +30,10 @@
       padding-bottom: 20px;
     }
 
+    .hidden {
+      display: none;
+    }
+
     form {
       width: 70%;
       height: 70%;
@@ -41,7 +46,14 @@
         width: 60%;
         height: 4%;
         font-size: 1rem;
-        margin-bottom: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        border: 0;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
           width: 200px;
@@ -53,7 +65,14 @@
         width: 60%;
         height: 20%;
         font-size: 1rem;
-        margin-bottom: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        border: 0;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
           width: 200px;
@@ -71,6 +90,7 @@
       border-radius: 10px;
       font-weight: 500;
       font-size: 1rem;
+      margin: 1rem;
       cursor: pointer;
 
       &:focus {
