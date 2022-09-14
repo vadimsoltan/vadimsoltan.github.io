@@ -1,11 +1,33 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.scss";
 
 export default function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_fuoesc5",
+        "template_0q1xs92",
+        e.target,
+        "y00eQrFm10B7zvFau"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const [message, setMessage] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    sendEmail(e);
     setMessage(true);
   };
   return (

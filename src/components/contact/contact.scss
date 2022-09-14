@@ -13,7 +13,8 @@
     overflow: hidden;
 
     img {
-      height: 100%;
+      width: 100vw;
+      object-fit: scale-down;
     }
   }
   .right {
