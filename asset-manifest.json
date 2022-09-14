@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vadimsoltan.github.io/static/css/main.8f2122b2.css",
-    "main.js": "/vadimsoltan.github.io/static/js/main.8ab4bcf4.js",
+    "main.css": "/vadimsoltan.github.io/static/css/main.54008bfa.css",
+    "main.js": "/vadimsoltan.github.io/static/js/main.95aabc89.js",
     "index.html": "/vadimsoltan.github.io/index.html",
-    "main.8f2122b2.css.map": "/vadimsoltan.github.io/static/css/main.8f2122b2.css.map",
-    "main.8ab4bcf4.js.map": "/vadimsoltan.github.io/static/js/main.8ab4bcf4.js.map"
+    "main.54008bfa.css.map": "/vadimsoltan.github.io/static/css/main.54008bfa.css.map",
+    "main.95aabc89.js.map": "/vadimsoltan.github.io/static/js/main.95aabc89.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f2122b2.css",
-    "static/js/main.8ab4bcf4.js"
+    "static/css/main.54008bfa.css",
+    "static/js/main.95aabc89.js"
   ]
 }
