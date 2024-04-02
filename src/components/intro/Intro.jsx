@@ -1,7 +1,7 @@
-import "./intro.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "./intro.scss";
+import imgSrc from "./IMG_0464.png"; // Importing the image
 
 export default function Intro() {
   const textRef = useRef();
@@ -18,7 +18,8 @@ export default function Intro() {
   return (
     <div className="intro" id="intro">
       <div className="left">
-        <div className="imgContainer"></div>
+        {/* Replace the circle with the image */}
+        <img src={imgSrc} alt="Introduction" />
       </div>
       <div className="right">
         <div className="wrapper">
