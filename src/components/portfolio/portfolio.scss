@@ -28,6 +28,10 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    li {
+      margin-right: 10px; /* Added margin right for better spacing between items */
+    }
   }
 
   .container {
@@ -60,11 +64,16 @@
       @include mobile {
         width: 130px;
         height: 100px;
+        margin: 10px; /* Adjusted margin for better spacing */
       }
 
       h3 {
         position: absolute;
         font-size: 4rem;
+
+        @include mobile {
+          font-size: 1.5rem; /* Adjusted font size for better readability */
+        }
       }
 
       img {

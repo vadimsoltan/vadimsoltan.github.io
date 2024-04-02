@@ -8,7 +8,7 @@
   cursor: pointer;
 
   @include mobile {
-    margin-right: 20px;
+    margin-right: 20px; /* Adjusted margin for better spacing on mobile */
   }
 
   &.active {
