@@ -4,28 +4,29 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: #f8f8f8; /* Off-white */
+    color: #333333; /* Muted black */
 }
 
 /* Navigation */
 .navbar {
     font-size: 1rem;
-    background-color: #424242;
+    background-color: #333333; /* Muted black */
     color: #ffffff;
 }
 
 .navbar .nav-link {
-    color: #f5f5f5;
+    color: #f8f8f8;
 }
 
 .navbar .nav-link:hover {
-    color: #ffab40;
+    color: #b03a2e; /* Muted crimson */
 }
 
 /* Hero Section */
 .hero {
     height: 75vh;
-    background: linear-gradient(135deg, #37474f, #607d8b);
+    background: linear-gradient(135deg, #333333, #555555); /* Muted black gradient */
     color: #ffffff;
     text-align: center;
     position: relative;
@@ -42,14 +43,14 @@ body {
 }
 
 .text-accent {
-    color: #ffab40;
+    color: #b03a2e; /* Muted crimson */
     font-weight: bold;
 }
 
 /* About Section */
 #about {
-    background: #546e7a;
-    color: #ffffff;
+    background: #f8f8f8; /* Off-white */
+    color: #333333; /* Muted black */
     padding: 3rem 0;
 }
 
@@ -58,7 +59,7 @@ body {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #about p {
@@ -68,36 +69,50 @@ body {
 
 /* Skills Section */
 #skills {
-    background: #cfd8dc;
-    color: #212121;
+    background: #f0f0f0; /* Slightly darker off-white */
+    color: #333333; /* Muted black */
 }
 
 #skills h4 {
-    color: #37474f;
+    color: #555555; /* Darker muted black */
 }
 
 /* Experience Section */
 #experience {
-    background: #eceff1;
-    color: #212121;
+    background: #f8f8f8; /* Off-white */
+    color: #333333; /* Muted black */
 }
 
 .timeline-item h3 {
-    color: #546e7a;
+    color: #333333; /* Muted black */
 }
 
 .timeline-item ul {
     padding-left: 1.5rem;
 }
 
+/* Education Section */
+.education {
+    color: #333333; /* Muted black */
+    background: #f8f8f8; /* Off-white */
+}
+
+.education h3 {
+    color: #333333; /* Muted black */
+}
+
+.education ul {
+    padding-left: 1.5rem;
+}
+
 /* Contact Section */
 #contact {
-    background: #424242;
+    background: #333333; /* Muted black */
     color: #ffffff;
 }
 
 #contact a {
-    color: #ffab40;
+    color: #b03a2e; /* Muted crimson */
     text-decoration: none;
 }
 
@@ -107,6 +122,6 @@ body {
 
 /* Footer */
 footer {
-    background: #263238;
+    background: #222222; /* Darker muted black */
     color: #ffffff;
 }
