@@ -10,22 +10,22 @@ body {
 
 /* Accent Colors */
 .text-accent, .btn-accent {
-    color: #007bff !important; /* Blue accent color */
+    color: #000000 !important; /* Black accent color */
 }
 
 .btn-accent {
-    background-color: #007bff !important;
-    border-color: #007bff !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
 }
 
 .btn-accent:hover {
-    background-color: #0056b3 !important;
-    border-color: #0056b3 !important;
+    background-color: #990000 !important; /* Dark crimson */
+    border-color: #990000 !important;
 }
 
 /* Section Titles */
 .section-title {
-    color: #007bff; /* Blue accent */
+    color: #000000; /* Black accent */
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -40,12 +40,12 @@ body {
 }
 
 .navbar .nav-link:hover, .navbar .nav-link.active {
-    color: #007bff; /* Blue accent */
+    color: #000000; /* Black accent */
 }
 
 .hero {
     height: 75vh;
-    background: #007bff;
+    background: #000000;
     color: #ffffff;
     text-align: center;
     display: flex;
@@ -57,7 +57,7 @@ body {
 }
 
 .text-accent {
-    color: #007bff;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -69,13 +69,13 @@ body {
 }
 
 #experience h3 {
-    color: #007bff; /* Blue accent */
+    color: #000000; /* Black accent */
     font-weight: 600;
 }
 
 .timeline {
     padding-left: 1rem;
-    border-left: 4px solid #007bff; /* Vertical bar for timeline */
+    border-left: 4px solid #000000; /* Vertical bar for timeline */
 }
 
 .timeline-item {
@@ -109,7 +109,7 @@ body {
     top: 0;
     bottom: 0;
     width: 4px;
-    background-color: #007bff; /* Blue accent */
+    background-color: #000000; /* Black accent */
 }
 
 /* Contact Section */
@@ -120,13 +120,14 @@ body {
 }
 
 #contact a {
-    color: #007bff; /* Blue accent */
+    color: #000000; /* Black accent */
     text-decoration: none;
     font-weight: 500;
 }
 
 #contact a:hover {
     text-decoration: underline;
+    color: #990000; /* Dark crimson */
 }
 
 .send-message {
@@ -134,19 +135,19 @@ body {
     align-items: center;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #007bff; /* Blue accent */
+    color: #000000; /* Black accent */
     text-decoration: none;
 }
 
 .send-message i {
     margin-right: 0.5rem;
     font-size: 1.2rem;
-    color: #007bff;
+    color: #000000;
 }
 
 .send-message:hover {
     text-decoration: underline;
-    color: #0056b3; /* Slightly darker blue for hover */
+    color: #990000; /* Dark crimson */
 }
 
 #contact strong {
@@ -164,10 +165,10 @@ body {
 
 .social-icon {
     font-size: 2rem;
-    color: #007bff; /* Blue accent */
+    color: #000000; /* Black accent */
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #0056b3; /* Slightly darker blue for hover */
+    color: #990000; /* Dark crimson */
 }
