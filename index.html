@@ -5,68 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Vadim Soltan">
     <title>Vadim Soltan - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <div class="container">
-            <h1>Vadim Soltan</h1>
-            <p>Honours Bachelor of Science in Mathematics & Statistics</p>
+            <h1 class="display-4">Vadim Soltan</h1>
+            <p class="lead">Honours Bachelor of Science in Mathematics & Statistics</p>
         </div>
     </header>
-    <main>
-        <section id="technical-skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Python, R, Java, C, JavaScript</li>
-                <li>Angular, Node.js, Docker, AWS Tools</li>
-                <li>Kafka, RabbitMQ, Kubernetes, Helm</li>
-                <li>Grafana, Prometheus, OpenTelemetry</li>
-                <li>Jira, Jenkins, Git, Jupyter Notebook</li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <div>
-                <h3>University of Toronto</h3>
-                <p>Sep 2015 – Apr 2022</p>
-                <p>Honours Bachelor of Science (Mathematics & Statistics)</p>
+    <main class="container my-5">
+        <!-- Technical Skills Section -->
+        <section id="technical-skills" class="mb-5">
+            <h2 class="text-primary mb-3">Technical Skills</h2>
+            <div class="row">
+                <ul class="col-md-6">
+                    <li>Python, R, Java, C, JavaScript</li>
+                    <li>Angular, Node.js, Docker, AWS Tools</li>
+                </ul>
+                <ul class="col-md-6">
+                    <li>Kafka, RabbitMQ, Kubernetes, Helm</li>
+                    <li>Grafana, Prometheus, OpenTelemetry</li>
+                    <li>Jira, Jenkins, Git, Jupyter Notebook</li>
+                </ul>
             </div>
         </section>
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <article>
-                <h3>Indoc Systems - Software Developer</h3>
-                <p>Oct 2022 – Present</p>
-                <ul>
-                    <li>Designed and implemented a workflow scheduling system in Kubernetes, integrated into a microservice architecture.</li>
-                    <li>Developed an automated QA solution for microservices, integrating with TestRail and Jenkins through Kubernetes orchestration.</li>
-                    <li>Built a Kubernetes infrastructure monitoring and alerting solution using Grafana, enhancing system reliability.</li>
-                    <li>Created a billing service to track client usage within shared Kubernetes clusters, ensuring accurate usage reporting.</li>
-                    <li>Developed and maintained always-available Airflow pipelines for task automation and data workflows.</li>
-                </ul>
-            </article>
-            <article>
-                <h3>CIBC - Full Stack Developer</h3>
-                <p>Sep 2019 – Sep 2020</p>
-                <ul>
-                    <li>Designed and implemented Virtual Assistant IoT systems.</li>
-                    <li>Integrated AWS services like Lex, S3, SQS, and CloudWatch.</li>
-                    <li>Advised team members on architecture and implementation.</li>
-                </ul>
-            </article>
-            <article>
-                <h3>York University - Research Assistant</h3>
-                <p>Jun 2017 – Dec 2018</p>
-                <ul>
-                    <li>Created research documents and evaluated projects.</li>
-                    <li>Assisted with interviews and logistics for group activities.</li>
-                </ul>
-            </article>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-5">
+            <h2 class="text-primary mb-3">Education</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">University of Toronto</h3>
+                    <p class="card-text"><strong>Sep 2015 – Apr 2022</strong></p>
+                    <p class="card-text">Honours Bachelor of Science (Mathematics & Statistics)</p>
+                </div>
+            </div>
         </section>
-        <footer>
-            <p>Contact: soltan.vadim@gmail.com | 647-919-3121</p>
-        </footer>
+
+        <!-- Professional Experience Section -->
+        <section id="experience">
+            <h2 class="text-primary mb-3">Professional Experience</h2>
+            <!-- Indoc Systems -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Indoc Systems - Software Developer</h3>
+                    <p class="card-text"><strong>Oct 2022 – Present</strong></p>
+                    <ul>
+                        <li>Designed and implemented a workflow scheduling system in Kubernetes, integrated into a microservice architecture.</li>
+                        <li>Developed an automated QA solution for microservices, integrating with TestRail and Jenkins through Kubernetes orchestration.</li>
+                        <li>Built a Kubernetes infrastructure monitoring and alerting solution using Grafana, enhancing system reliability.</li>
+                        <li>Created a billing service to track client usage within shared Kubernetes clusters, ensuring accurate usage reporting.</li>
+                        <li>Developed and maintained always-available Airflow pipelines for task automation and data workflows.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- CIBC -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">CIBC - Full Stack Developer</h3>
+                    <p class="card-text"><strong>Sep 2019 – Sep 2020</strong></p>
+                    <ul>
+                        <li>Designed and implemented Virtual Assistant IoT systems.</li>
+                        <li>Integrated AWS services like Lex, S3, SQS, and CloudWatch.</li>
+                        <li>Advised team members on architecture and implementation.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- York University -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">York University - Research Assistant</h3>
+                    <p class="card-text"><strong>Jun 2017 – Dec 2018</strong></p>
+                    <ul>
+                        <li>Created research documents and evaluated projects.</li>
+                        <li>Assisted with interviews and logistics for group activities.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact: <a href="mailto:soltan.vadim@gmail.com" class="text-white">soltan.vadim@gmail.com</a> | 647-919-3121</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
