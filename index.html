@@ -48,7 +48,7 @@
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container text-center">
-            <h2 class="text-primary mb-4">About Me</h2>
+            <h2 class="section-title mb-4">About Me</h2>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-4 mb-4">
                     <img src="profile.jpeg" alt="Vadim Soltan" class="rounded-circle img-fluid shadow-sm" style="width: 200px; height: 200px;">
@@ -65,7 +65,7 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-primary text-center mb-4">Technical Skills</h2>
+            <h2 class="section-title text-center mb-4">Technical Skills</h2>
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <i class="fas fa-code fa-3x text-primary"></i>
@@ -87,9 +87,10 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-5">
+    <section id="experience" class="py-5 position-relative">
         <div class="container">
-            <h2 class="text-primary text-center mb-4">Experience</h2>
+            <h2 class="section-title text-center mb-4">Experience</h2>
+            <div class="vertical-bar"></div>
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>Indoc Systems - Software Developer</h3>
@@ -113,17 +114,32 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-dark text-white">
         <div class="container text-center">
-            <h2 class="text-primary mb-4">Contact Me</h2>
-            <p>Let's work together! You can reach me at:</p>
-            <p><a href="mailto:soltan.vadim@gmail.com">soltan.vadim@gmail.com</a></p>
-            <p>647-919-3121</p>
+            <h2 class="section-title mb-4">Contact Me</h2>
+            <p class="mb-4">Looking for collaboration or consultation? Reach out via email, phone, or LinkedIn.</p>
+            <ul class="list-unstyled mb-4">
+                <li><i class="fas fa-envelope me-2"></i><a href="mailto:soltan.vadim@gmail.com" class="text-light">soltan.vadim@gmail.com</a></li>
+                <li><i class="fas fa-phone me-2"></i>+1 (647) 919-3121</li>
+                <li><i class="fab fa-linkedin me-2"></i><a href="https://linkedin.com/in/vadimsoltan" class="text-light">LinkedIn</a></li>
+            </ul>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                </div>
+                <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark text-white text-center">
+    <footer class="py-3 bg-dark text-center text-white">
         <p>© 2024 Vadim Soltan | All Rights Reserved</p>
     </footer>
 
