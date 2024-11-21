@@ -111,4 +111,40 @@ body {
 #contact {
     background: #ffffff;
     color: #444;
+    padding: 3rem 0;
+}
+
+#contact a {
+    color: #007bff; /* Blue accent */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.send-message {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff; /* Blue accent */
+    text-decoration: none;
+}
+
+.send-message i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.send-message:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Slightly darker blue for hover */
+}
+
+#contact strong {
+    font-weight: 600;
+    color: #333; /* Muted black */
 }
