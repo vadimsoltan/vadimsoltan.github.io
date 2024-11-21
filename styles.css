@@ -60,7 +60,42 @@ body {
 #experience {
     background: #f9fafb; /* Light neutral background */
     position: relative;
-    padding-left: 5rem;
+    padding: 3rem 0;
+}
+
+#experience h3 {
+    color: #007bff; /* Blue accent */
+    font-weight: 600;
+}
+
+.timeline {
+    padding-left: 1rem;
+    border-left: 4px solid #007bff; /* Vertical bar for timeline */
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+}
+
+.timeline-item h4 {
+    font-size: 1.25rem;
+    color: #444; /* Muted black */
+}
+
+.timeline-item p {
+    margin-bottom: 0.5rem;
+    color: #666; /* Subtle gray */
+}
+
+.timeline-item ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+@media (max-width: 768px) {
+    #experience .row {
+        flex-direction: column;
+    }
 }
 
 .vertical-bar {
