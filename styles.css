@@ -15,12 +15,20 @@ body {
     color: #ffffff;
 }
 
+.navbar .navbar-brand {
+    color: #f5f5f5; /* Light off-white for visibility */
+}
+
 .navbar .nav-link {
-    color: #f8f8f8;
+    color: #f5f5f5; /* Light off-white for visibility */
 }
 
 .navbar .nav-link:hover {
-    color: #b03a2e; /* Muted crimson */
+    color: #b03a2e; /* Muted crimson for hover effect */
+}
+
+.navbar .nav-link.active {
+    color: #b03a2e; /* Muted crimson for active link */
 }
 
 /* Hero Section */
