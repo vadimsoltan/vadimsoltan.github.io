@@ -1,21 +1,100 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    margin-top: 56px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navigation */
+.navbar {
+    font-size: 1rem;
+}
+
+/* Hero Section */
 .hero {
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-    color: white;
+    height: 85vh;
+    background: linear-gradient(135deg, #b3e5fc, #e1bee7);
+    color: #ffffff;
     text-align: center;
+    position: relative;
 }
 
-.timeline {
-    border-left: 3px solid #0044cc;
-    padding-left: 20px;
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.text-accent {
+    color: #ff8a65;
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    background: #f3e5f5;
+    color: #212121;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+/* Skills Section */
+#skills {
+    background: #e3f2fd;
+}
+
+#skills h4 {
+    color: #3949ab;
+}
+
+/* Experience Section */
+#experience {
+    background: #fce4ec;
 }
 
 .timeline-item {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+}
+
+.timeline-item h3 {
+    color: #d81b60;
+}
+
+.timeline-item ul {
+    padding-left: 1.5rem;
+}
+
+/* Contact Section */
+#contact {
+    background: #b2dfdb;
+}
+
+#contact a {
+    color: #00695c;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #37474f;
+    color: #ffffff;
 }
