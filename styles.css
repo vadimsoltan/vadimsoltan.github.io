@@ -90,20 +90,6 @@ body {
     padding-left: 1.5rem;
 }
 
-/* Education Section */
-.education {
-    color: #546e7a;
-    background: #eceff1;
-}
-
-.education h3 {
-    color: #37474f;
-}
-
-.education ul {
-    padding-left: 1.5rem;
-}
-
 /* Contact Section */
 #contact {
     background: #424242;
