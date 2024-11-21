@@ -44,6 +44,7 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
     height: 75vh;
     background: #000000;
@@ -54,19 +55,42 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    clip-path: path(
+        "M 0 0 L 100% 0 Q 75% 100% 50% 85% Q 25% 70% 0 100% Z"
+    );
 }
 
-/* Wave Transition */
-.wave-container {
+.hero h1, .hero p {
+    z-index: 1;
     position: relative;
-    margin-top: -1px;
 }
 
-.wave-container svg {
-    display: block;
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    transform: scaleY(-1); /* Flips the wave to align with the profile picture */
+    height: 10%;
+    background: #f9fafb;
+    z-index: 0;
+    clip-path: path(
+        "M 0 10% Q 75% 0% 100% 0 L 0 100%"
+    );
+}
+
+/* About Section */
+.about-section {
+    background: #f9fafb;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .text-accent {
