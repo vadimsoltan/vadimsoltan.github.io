@@ -56,19 +56,6 @@ body {
     position: relative;
 }
 
-/* Wave Transition */
-.wave-container {
-    position: relative;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave-container svg {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 /* About Section */
 .about-section {
     background: #f9fafb;
