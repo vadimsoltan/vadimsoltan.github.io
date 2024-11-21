@@ -4,17 +4,28 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: #f5f5f5;
 }
 
 /* Navigation */
 .navbar {
     font-size: 1rem;
+    background-color: #424242;
+    color: #ffffff;
+}
+
+.navbar .nav-link {
+    color: #f5f5f5;
+}
+
+.navbar .nav-link:hover {
+    color: #ffab40;
 }
 
 /* Hero Section */
 .hero {
-    height: 85vh;
-    background: linear-gradient(135deg, #b3e5fc, #e1bee7);
+    height: 75vh;
+    background: linear-gradient(135deg, #37474f, #607d8b);
     color: #ffffff;
     text-align: center;
     position: relative;
@@ -26,24 +37,25 @@ body {
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 0;
 }
 
 .text-accent {
-    color: #ff8a65;
+    color: #ffab40;
     font-weight: bold;
 }
 
 /* About Section */
 #about {
-    background: #f3e5f5;
-    color: #212121;
+    background: #546e7a;
+    color: #ffffff;
+    padding: 3rem 0;
 }
 
 #about img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -51,41 +63,55 @@ body {
 
 #about p {
     font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 /* Skills Section */
 #skills {
-    background: #e3f2fd;
+    background: #cfd8dc;
+    color: #212121;
 }
 
 #skills h4 {
-    color: #3949ab;
+    color: #37474f;
 }
 
 /* Experience Section */
 #experience {
-    background: #fce4ec;
-}
-
-.timeline-item {
-    margin-bottom: 2rem;
+    background: #eceff1;
+    color: #212121;
 }
 
 .timeline-item h3 {
-    color: #d81b60;
+    color: #546e7a;
 }
 
 .timeline-item ul {
     padding-left: 1.5rem;
 }
 
+/* Education Section */
+.education {
+    color: #546e7a;
+    background: #eceff1;
+}
+
+.education h3 {
+    color: #37474f;
+}
+
+.education ul {
+    padding-left: 1.5rem;
+}
+
 /* Contact Section */
 #contact {
-    background: #b2dfdb;
+    background: #424242;
+    color: #ffffff;
 }
 
 #contact a {
-    color: #00695c;
+    color: #ffab40;
     text-decoration: none;
 }
 
@@ -95,6 +121,6 @@ body {
 
 /* Footer */
 footer {
-    background: #37474f;
+    background: #263238;
     color: #ffffff;
 }
