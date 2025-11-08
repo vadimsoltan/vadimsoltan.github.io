@@ -176,6 +176,21 @@ body {
     color: #333; /* Muted black */
 }
 
+/* Dark mode contact readability overrides */
+body.dark #contact {background: var(--bg-alt); color: var(--text);}
+/* Refined dark mode contact contrast */
+body.dark #contact {background:#121417; color:#e9ecef;}
+body.dark #contact .section-title {color:#f5f7f9;}
+body.dark #contact p {color:#d2d6da; line-height:1.55;}
+body.dark #contact strong {color:#f8fafb;}
+body.dark #contact a {color:#ff5e5e; font-weight:600;}
+body.dark #contact a:hover {color:#ffa8a8;}
+body.dark .send-message {color:#ff5e5e;}
+body.dark .send-message i {color:#ff5e5e;}
+body.dark .send-message:hover {color:#ffa8a8;}
+/* Ensure focus visibility */
+body.dark #contact a:focus, body.dark .send-message:focus {outline:2px solid #ff5e5e; outline-offset:2px;}
+
 /* Social Icons */
 .social-icons {
     display: flex;
@@ -199,6 +214,12 @@ body {
 .skill-tag {background:var(--bg-alt);border:1px solid var(--border);padding:.35rem .6rem;border-radius:20px;font-size:.75rem;font-weight:500;letter-spacing:.5px;}
 .skill-tag {color: var(--text);transition:background .25s ease,color .25s ease,border-color .25s ease;}
 .skill-tag:hover {background:var(--accent);color:#fff;cursor:default;}
+
+/* Skills section dynamic backgrounds */
+#skills {background:var(--bg-alt);}
+body.dark #skills {background:#1b1f24;}
+body.dark #skills .section-title {color:#f5f7f9;text-shadow:0 1px 2px rgba(0,0,0,.4);}
+#skills .section-title {text-shadow:0 1px 2px rgba(0,0,0,.08);}
 
 /* Metrics Grid */
 #metrics {background:var(--bg-alt);padding:3rem 0;}
@@ -253,6 +274,7 @@ body.dark .nav-link:hover {color:#ff4d4d !important;}
 /* Resume Button */
 .resume-btn {border:1px solid var(--accent);background:var(--accent);color:#fff;padding:.55rem .9rem;border-radius:6px;font-size:.75rem;font-weight:600;letter-spacing:.5px;}
 .resume-btn:hover {background:var(--accent-alt);border-color:var(--accent-alt);color:#fff;}
+body.dark .resume-btn {background:var(--accent-alt);border-color:var(--accent-alt);color:#fff;}
 
 /* Accessibility helper */
 .visually-hidden {position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;}

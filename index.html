@@ -37,7 +37,7 @@
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="resume-btn" href="Vadim_Soltan_Resume.txt" download aria-label="Download Resume">Resume</a></li>
+                    <li class="nav-item"><a id="resumeBtn" class="resume-btn" href="Vadim_Soltan_Resume.txt" download aria-label="Download Resume">Resume</a></li>
                     <li class="nav-item"><button id="modeToggle" class="mode-toggle" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i><span class="d-none d-md-inline">Mode</span></button></li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light" aria-labelledby="skills-title">
+    <section id="skills" class="py-5" aria-labelledby="skills-title">
         <div class="container">
             <h2 id="skills-title" class="section-title text-center mb-4">Skills</h2>
             <div class="skill-tags" aria-label="Skill tags">
@@ -266,7 +266,7 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container text-center">
             <h2 class="section-title text-center mb-4">Contact Me</h2>
             <p class="mb-3">I'd love to collaborate or answer your questions. Feel free to reach out via email, phone, or connect with me online.</p>
@@ -313,40 +313,6 @@
       ]
     }
     </script>
-    <!-- Custom Script -->
-    <script>
-        const options = {
-            strings: [
-                "<span style='color:#990000;'>Software</span>", 
-                "<span style='color:#990000;'>UX/UI</span>", 
-                "<span style='color:#990000;'>Data</span>"
-            ],
-            typeSpeed: 100,
-            backSpeed: 50,
-            backDelay: 2000,
-            loop: true
-        };
-        new Typed("#dynamic-title", options);
-
-        // Dark mode toggle
-        const toggleBtn = document.getElementById('modeToggle');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const stored = localStorage.getItem('theme');
-        if(stored === 'dark' || (!stored && prefersDark)) {
-            document.body.classList.add('dark');
-        }
-        function setIcon(){
-            const icon = toggleBtn.querySelector('i');
-            if(document.body.classList.contains('dark')) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
-            else { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
-        }
-        setIcon();
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark');
-            localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-            setIcon();
-        });
-    </script>
-    </script>
+    <!-- NOTE: Removed duplicate custom script block (logic now in deferred script near top) -->
 </body>
 </html>
